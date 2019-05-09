@@ -10,7 +10,7 @@ public class Test1 {
         bubbleSort(array);
     }
 
-    public static int[] bubbleSort(int[] array) {
+    public static void bubbleSort(int[] array) {
         int length = array.length;
         int temp = 0;
 
@@ -25,7 +25,5 @@ public class Test1 {
                 System.out.println(Arrays.toString(array));
             }
         }
-
-        return null;
     }
 }
