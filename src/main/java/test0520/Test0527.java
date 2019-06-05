@@ -24,7 +24,29 @@ public class Test0527 {
 
 //        System.out.println( test2("", "") );
 
-        System.out.println(Arrays.toString(plusOne(new int[] {9, 9, 9, 9, 9})));
+//        System.out.println(Arrays.toString(plusOne(new int[] {9, 9, 9, 9, 9})));
+
+//        System.out.println(addBinary("1010", "1011"));
+
+        System.out.println(mySqrt(8));
+    }
+
+    public static int mySqrt(int x) {
+
+        double dd = Math.sqrt(x);
+        String ss = String.valueOf(dd);
+        String[] sp = ss.split("\\.");
+        String oo = sp[0];
+        int ii = Integer.valueOf(oo);
+        return ii;
+//        return Integer.valueOf(String.valueOf(dd).split("//.")[0]);
+    }
+
+
+    public static String addBinary(String a, String b) {
+        int intA = Integer.parseInt(a, 2);
+        int intB = Integer.parseInt(b, 2);
+        return Integer.toBinaryString(intA + intB);
     }
 
 
